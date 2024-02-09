@@ -5,6 +5,7 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
+import BugReport from '@/Components/BugReport.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
 defineProps({
@@ -54,8 +55,11 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
+            <BugReport dusk="bugReportTest"/>
+
             <div class="mt-4">
                 <InputLabel for="password" value="Password" />
+
 
                 <TextInput
                     id="password"
